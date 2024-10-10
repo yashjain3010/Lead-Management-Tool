@@ -1,0 +1,126 @@
+.createLeadForm {
+  max-width: 80vw;
+
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 50px;
+  column-gap: 70px;
+  width: 70vw;
+}
+
+.formHeading {
+  text-align: center;
+  color: #333;
+  grid-column: span 3;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  color: #555;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="time"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #aaa;
+  font-style: italic;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="date"]:focus,
+input[type="time"]:focus,
+select:focus,
+textarea:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+span {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+  grid-column: span 3;
+}
+
+.btn1 {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  grid-column: span 3;
+  align-self: center;
+  width: auto;
+  width: 35% !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  form {
+    grid-template-columns: 1fr;
+  }
+
+  button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  form {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 1600px) {
+  .createLeadForm {
+    gap: 30px;
+  }
+}
+
+@media (max-width: 1380px) {
+  .createLeadForm {
+    display: flex;
+    flex-direction: column;
+    margin-top: 300px !important;
+  }
+}
+
+@media (max-width: 660px) {
+  .createLeadForm {
+    width: 90vw;
+  }
+}

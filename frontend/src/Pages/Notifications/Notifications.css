@@ -1,0 +1,36 @@
+.notifications {
+  padding: 20px;
+  border: 1px solid #ddd;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  max-width: 400px;
+  margin: 20px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.notifications h2 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.notifications ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.notifications li {
+  background-color: #fff;
+  padding: 10px;
+  border: 1px solid #eee;
+  margin-bottom: 10px;
+  border-radius: 6px;
+}
+
+.notifications li p {
+  margin: 0;
+}
+
+.notifications li p strong {
+  color: #ff6f61;
+}

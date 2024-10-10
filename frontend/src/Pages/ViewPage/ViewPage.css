@@ -1,0 +1,18 @@
+.two h1 {
+  color: white;
+  text-transform: capitalize;
+}
+
+.alt-two h1 {
+  text-align: center;
+}
+
+.pageContainer {
+  padding-top: 80px;
+  display: flex;
+  width: 100vw;
+  background-image: linear-gradient(to right, #434343 0%, black 100%);
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}

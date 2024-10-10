@@ -1,0 +1,45 @@
+.circuler-progress .percent {
+  position: relative;
+
+  display: flex;
+  width: 360px;
+  height: 360px;
+  align-items: center;
+  justify-content: center;
+}
+
+.circuler-progress svg {
+  transform: rotate(-90deg);
+}
+
+.circuler-progress circle {
+  fill: none;
+}
+
+.circuler-progress circle:first-child {
+  stroke: #e6e6e6;
+  stroke-width: 40;
+}
+
+.circuler-progress circle:nth-child(2) {
+  stroke: #f7d3e0;
+  stroke-width: 10;
+}
+
+.circuler-progress circle:last-child {
+  stroke: #f3518c;
+  stroke-width: 10;
+  stroke-dasharray: calc(2 * 125 * 3.1416);
+  /* Circumference of the circle (2 * π * radius) */
+  transition: stroke-dashoffset 0.5s ease;
+  /* Smooth transition */
+}
+
+.percentage-lbl {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 25px;
+  color: white;
+}
